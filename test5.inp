@@ -1,0 +1,40 @@
+tolerance 2.0 
+filetype pdb
+output test5.pdb
+
+structure water.pdb
+  number 1000
+  inside box 0.0 0.0 0.0 50. 25. 25.
+end structure
+
+structure hec.pdb
+  number 1
+  center
+  fixed 10. 12. 12. 0. 0. 0.
+end structure 
+
+structure hec.pdb
+  number 1
+  center
+  fixed 25. 12. 12. 0. 0. 0.
+end structure
+
+structure hec.pdb
+  number 1
+  center
+  fixed 40. 12. 12. 0. 0. 0.
+end structure
+
+structure cap3.pdb
+  number 45
+  inside box 0. 25. 0. 50. 50. 25.
+  constrain_rotation y 0. 0.
+  constrain_rotation z 90. 5.
+end structure
+
+structure cap3.pdb
+  number 45
+  inside box 0. -20. 0. 50. 0. 25.
+  constrain_rotation y 0. 0.
+  constrain_rotation z -90. 5.
+end structure
