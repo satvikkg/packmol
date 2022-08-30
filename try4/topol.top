@@ -1,0 +1,18 @@
+
+; Include forcefield parameters
+#include "amber99.ff/forcefield.itp"
+#include "atomtypes.itp"
+#include "HEC_GMX.itp"
+#include "CAP_GMX.itp"
+
+; Include water topology
+#include "amber99.ff/spc.itp"
+
+[ system ]
+ HEC
+
+[ molecules ]
+; Compound        nmols
+ HEC              3 
+ CAP              86
+ SOL              1000

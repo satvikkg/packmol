@@ -1,0 +1,15 @@
+; HEC_GMX.top created by acpype (v: 2021-02-05T22:15:50CET) on Tue Aug 30 16:54:15 2022
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+; Include HEC_GMX.itp topology
+#include "HEC_GMX.itp"
+
+[ system ]
+ HEC
+
+[ molecules ]
+; Compound        nmols
+ HEC              1     
